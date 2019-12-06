@@ -32,7 +32,7 @@ public class Hashtable {
 
     }
 
-    //adds a value to the hashtable 
+
     public void put (String key, String value){
 
         int index = getHash(key);
@@ -77,7 +77,7 @@ public class Hashtable {
     }
 
     
-    //Check if contains a certian key if not returns false
+    
     public boolean containsKey(String key) {
         
         if (get(key)==null){
@@ -87,7 +87,7 @@ public class Hashtable {
     }
 
 
-    //returns the key as a string if it is found if not returns null
+  
     public String get(String key){
 
         int index = getHash(key);
@@ -111,7 +111,7 @@ public class Hashtable {
     }
 
 
-    public String remove(String key) throws Exception { //removes from the hashtable returns the key of that value
+    public String remove(String key) throws Exception { 
 
         int index = getHash(key);
         HashNode head = bucket.get(index);
